@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="search-container">
+    <div class="search-box">
+        <input type="text" id="countrySearch" placeholder="Search by country name" onkeydown="searchOnEnter(event, 'country')">
+        <button onclick="search('country')">Search</button>
+    </div>
+
+    <div class="search-box">
+        <input type="text" id="currencySearch" placeholder="Search by currency code" onkeydown="searchOnEnter(event, 'currency')">
+        <button onclick="search('currency')">Search</button>
+    </div>
+</div>
+
+<div class="country-list">
+    <!-- 1.Afghanistan -->
+    <div class="country-item">
+        <img src="./country_flags/af.png" alt="Afghanistan Flag">
+        <span>Afghanistan</span>
+        <span>AFG</span>
+        <a href="https://en.wikipedia.org/wiki/Afghanistan">Wikipedia</a>
+    </div>
+    <!-- 2.Albania -->
+    <div class="country-item">
+        <img src="./country_flags/al.png" alt="Albanian Flag">
+        <span>Albania</span>
+        <span>ALB</span>
+        <a href="https://en.wikipedia.org/wiki/Albania">Wikipedia</a>
+    </div>
+    <!-- 3.Algeria -->
+    <div class="country-item">
+        <img src="./country_flags/ag.png" alt="Algeria Flag">
+        <span>Algeria</span>
+        <span>DZA</span>
+        <a href="https://en.wikipedia.org/wiki/Algeria">Wikipedia</a>
+    </div>
+    <!-- 4.Andorra -->
+    <div class="country-item">
+        <img src="./country_flags/ad.png" alt="Andorra Flag">
+        <span>Andorra</span>
+        <span>AND</span>
+        <a href="https://en.wikipedia.org/wiki/Andorra">Wikipedia</a>
+    </div>
+    <!-- 5.Angola -->
+    <div class="country-item">
+        <img src="./country_flags/ao.png" alt="Angola Flag">
+        <span>Angola</span>
+        <span>AOA</span>
+        <a href="https://en.wikipedia.org/wiki/Angola">Wikipedia</a>
+    </div>
+     <!-- 6.Argentina -->
+     <div class="country-item">
+        <img src="./country_flags/ar.png" alt="Argentina Flag">
+        <span>Argentina</span>
+        <span>ARG</span>
+        <a href="https://en.wikipedia.org/wiki/Argentina">Wikipedia</a>
+    </div> 
+    <!-- 7.Armenia -->
+    <div class="country-item">
+        <img src="./country_flags/am.png" alt="Armenian Flag">
+        <span>Armenian</span>
+        <span>ARM</span>
+        <a href="https://en.wikipedia.org/wiki/Armenia">Wikipedia</a>
+    </div> 
+    <!-- 8. Azerbajan -->
+    <div class="country-item">
+        <img src="./country_flags/az.png" alt="Azerbajan Flag">
+        <span>Azerbajan</span>
+        <span>AZE</span>
+        <a href="https://en.wikipedia.org/wiki/Azerbajan">Wikipedia</a>
+    </div> 
+    <!-- 9.Bahamas -->
+    <div class="country-item">
+        <img src="./country_flags/bs.png" alt="Bahamas Flag">
+        <span>Bahamas</span>
+        <span>BHS</span>
+        <a href="https://en.wikipedia.org/wiki/Bahamas">Wikipedia</a>
+    </div> 
+    <!-- 10.Bahrain -->
+    <div class="country-item">
+        <img src="./country_flags/bh.png" alt="Bahrain Flag">
+        <span>Bahrain</span>
+        <span>BHR</span>
+        <a href="https://en.wikipedia.org/wiki/Bahrain">Wikipedia</a>
+    </div> 
+    <!-- 11.Bangladesh -->
+    <div class="country-item">
+        <img src="./country_flags/bd.png" alt="Bangladesh Flag">
+        <span>Bangladesh</span>
+        <span>BGD</span>
+        <a href="https://en.wikipedia.org/wiki/Bangladesh">Wikipedia</a>
+    </div> 
+    <!-- 12.Barbados -->
+    <div class="country-item">
+        <img src="./country_flags/bb.png" alt="Barbados Flag">
+        <span>Barbados</span>
+        <span>BRB</span>
+        <a href="https://en.wikipedia.org/wiki/Barbados">Wikipedia</a>
+    </div>
+     <!-- 13. Belarus -->
+    <div class="country-item">
+        <img src="./country_flags/by.png" alt="Belarus Flag">
+        <span>Belarus</span>
+        <span>BLR</span>
+        <a href="https://en.wikipedia.org/wiki/Belarus">Wikipedia</a>
+    </div> 
+    <!-- 14.Belgium -->
+    <div class="country-item">
+        <img src="./country_flags/be.png" alt="Belgium Flag">
+        <span>Belgium</span>
+        <span>BEL</span>
+        <a href="https://en.wikipedia.org/wiki/Belgium">Wikipedia</a>
+    </div> 
+    <!-- 15. Belize -->
+    <div class="country-item">
+        <img src="./country_flags/bz.png" alt="Belize Flag">
+        <span>Belize</span>
+        <span>BLZ</span>
+        <a href="https://en.wikipedia.org/wiki/Belize">Wikipedia</a>
+    </div> <!-- 16. Benin -->
+    <div class="country-item">
+        <img src="./country_flags/bj.png" alt="Benin Flag">
+        <span>Benin</span>
+        <span>BEN</span>
+        <a href="https://en.wikipedia.org/wiki/Benin">Wikipedia</a>
+    </div> 
+    <!-- 17.Buhtan -->
+    <div class="country-item">
+        <img src="./country_flags/bt.png" alt="Buhtan Flag">
+        <span>Buhtan</span>
+        <span>BTN</span>
+        <a href="https://en.wikipedia.org/wiki/Buhtan">Wikipedia</a>
+    </div> 
+    <!-- 18. Bolivia -->
+    <div class="country-item">
+        <img src="./country_flags/bo.png" alt="Bolivia Flag">
+        <span>Bolivia</span>
+        <span>BOL</span>
+        <a href="https://en.wikipedia.org/wiki/Bolivia">Wikipedia</a>
+    </div> 
+    <!-- 19. Bosnia and Herzegovina-->
+    <div class="country-item">
+        <img src="./country_flags/ba.png" alt="Bosnia and Herzegovina Flag">
+        <span>Bosnia and Herzegovina</span>
+        <span>BIH</span>
+        <a href="https://en.wikipedia.org/wiki/Bosnia and Herzegovina">Wikipedia</a>
+    </div> 
+    <!-- 20. Brazil -->
+    <div class="country-item">
+        <img src="./country_flags/br.png" alt="Brazil Flag">
+        <span>Brazil</span>
+        <span>BRA</span>
+        <a href="https://en.wikipedia.org/wiki/Brazil">Wikipedia</a>
+    </div> 
+
+
+
+
+</div>
+
+<script src="javascript.js"></script>
+</body>
+
+</html>

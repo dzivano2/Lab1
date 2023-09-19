@@ -1,0 +1,11 @@
+.search-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+input {
+    padding: 10px;
+    margin-right: 10px;
+}
